@@ -1,6 +1,6 @@
 '''
 3/30/24
-This Script takes the collected subdirectory of a domain and collects data into a csv file.
+This Script uses a collection of subdirectories to harvests data into a csv file.
 '''
 import requests
 from bs4 import BeautifulSoup
