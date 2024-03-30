@@ -1,6 +1,9 @@
 '''
 3/30/24
-This Script uses a collection of subdirectories to harvests data into a csv file.
+This script uses a collection of subdirectories to harvest data into a CSV file.
+The original project was for school contacts in a certain country.
+The original domain was redacted out of respect for privacy.
+The robots.txt file was NOT violated.
 '''
 import requests
 from bs4 import BeautifulSoup
