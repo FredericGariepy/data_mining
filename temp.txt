@@ -1,0 +1,214 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Frederic Gariepy} \\ \vspace{1pt}
+    \small 514-705-2209 $|$ \href{mailto:frederic.czk@gmail.com}{\underline{frederic.czk@gmail.com}} $|$
+    \href{https://github.com/FredericGariepy}{\underline{github.com/FredericGariepy}} $|$
+    \href{https://viruscat.com}{\underline{personal website}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\vspace{4pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McGill University}{Canada, Qc.}
+      {Accredited Certificate in Computers and Information Technology $|$ \textnormal {GPA: 3.95}}{Jan. 2023 -- Dec. 2024}
+     
+      \vspace{14pt}
+     
+\resumeItemListStart
+        {Courses taken:}\\
+        \vspace{5pt}
+        \begin{tabular}{@{\hspace{2ex}}lll}
+        - Programming Techniques\hspace{2ex} & - Data Structures and Algorithms\hspace{2ex} & - Web Services\hspace{2ex}\\
+        - Operating Systems Admin\hspace{2ex} & - Database Design \& Development\hspace{2ex} & - Web Development\hspace{2ex}\\
+        - Information System Security\hspace{2ex} & - Networking Fundamentals\hspace{2ex} &  - Mobile Application Development\hspace{2ex}\\
+        \end{tabular}
+      \resumeItemListEnd
+      \vspace{4pt}
+   
+    \resumeSubheading
+      {Concordia University}{Canada, Qc.}
+      {Bachelor of Philosophy}{Jan. 2016 -- Dec. 2019}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{4pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Project 3, Some basic AI} $|$ \emph{languages, frameworks, libraries, important dev. tool}}{start -- end}
+          \resumeItemListStart
+            \resumeItem{Developed  soemthing that does ABC}
+            \resumeItem{Implemented something to do X.}
+            \resumeItem{Made X feature to do Y}
+            \resumeItem{Some extra notice about the project}
+          \resumeItemListEnd
+         
+    \resumeProjectHeading
+          {\textbf{Project 2, Full-Stack App} $|$ \emph{languages, frameworks, libraries, important dev. tool}}{start -- end}
+          \resumeItemListStart
+            \resumeItem{Developed  soemthing that does ABC}
+            \resumeItem{Implemented something to do X.}
+            \resumeItem{Made X feature to do Y}
+            \resumeItem{Some extra notice about the project}
+          \resumeItemListEnd
+   
+      \resumeProjectHeading
+          {\textbf{Project 1, Mobile App} $|$ \emph{languages, frameworks, libraries, important dev. tool}}{start -- end}
+          \resumeItemListStart
+            \resumeItem{Developed  soemthing that does ABC}
+            \resumeItem{Implemented something to do X.}
+            \resumeItem{Made X feature to do Y}
+            \resumeItem{Some extra notice about the project}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Betway.com database penetration test} $|$ \emph{OWASP ZAP, Python, Requests}}{Mar. 2023}
+          \resumeItemListStart
+            \resumeItem{Explored a Cross-Domain Misconfiguration Vulnerability on a major online gambling website}
+            \resumeItem{Developed a python script to view entries in the company's paid API database access}
+            \resumeItem{Documented the method of access, collection of business data and potential DDoS}
+          \resumeItemListEnd
+         
+      \resumeProjectHeading
+          {\textbf{Data Scrapper} $|$ \emph{Python, Beautiful Soup, CSV}}{Dec. 2018}
+          \resumeItemListStart
+            \resumeItem{Developed a web scrapper to collect \& organize data for AI training data}
+            \resumeItem{Delivered 240,000+ entries containing: article titles, descriptions and paragraphs}
+            \resumeItem{Implemented web scrapping strategies to maximize collection of domain articles}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\vspace{4pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Spring, JUnit, Selenium} \\
+     \textbf{Developer Tools}{: Git, Visual Studio, PyCharm, IntelliJ, Eclipse, NetBeans, Android studio, Postman, OWASP ZAP} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Pandas, Beautiful Soup}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
