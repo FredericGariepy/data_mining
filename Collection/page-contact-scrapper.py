@@ -1,11 +1,18 @@
+# This script simply scrapes the information from pages.
+# The project is rather small, with only 1200~ records and all data was fetched.
+
+# For larger projects, Improvements include:
+# Data Extraction Check, Throttling requests, Logging and Error Handling
+
 import csv
 import requests
 from bs4 import BeautifulSoup
 import sys
 
-# These are typical imports for throtling and regex
+# These are typical imports for throtling, regex expressions, logging.
 # import time 
 # import re
+# import logging
 
 # System stdout requires this config for foreign characters. Do not remove.
 sys.stdout.reconfigure(encoding='utf-8')
