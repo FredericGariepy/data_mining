@@ -2,7 +2,7 @@
 - [ ] https://education.github.com/git-cheat-sheet-education.pdf
 - [ ] https://git-scm.com/docs
  
-# Navigate to your desired directory
+**Navigate to your desired directory**
 `cd /path/to/your/directory`
 
 | Step                         | Command                                                        | Description                                         |
