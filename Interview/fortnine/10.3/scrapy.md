@@ -8,5 +8,6 @@
 - `response.xpath("//title/text()").extract()`
 - `response.xpath("//span[@class='text']/text()").extract()` # Xpath w/ class
 
-
+###### css & xpath 
+- `response.css("li.next a").xpath("@href")[0].extract()`
 
