@@ -1,0 +1,29 @@
+{
+    "DISALLOW": [
+        "*captcha*",
+        "/*Print.aspx",
+        "/*.axd$",
+        "/*.exe$",
+        "/bin/",
+        "/Bin/",
+        "/*.bin$",
+        "/*.dll$",
+        "/*.ssi$",
+        "/Error/",
+        "/Controls/",
+        "/controls/",
+        "/Utility/",
+        "/install/",
+        "/Admin/",
+        "/App_Browser/",
+        "/App_Code/",
+        "/App_Data/",
+        "/App_GlobalResources/",
+        "/Components/",
+        "/Config/",
+        "/Documentation/",
+        "/Install/",
+        "/Providers/"
+    ],
+    "CRAWL_DELAY": []
+}
