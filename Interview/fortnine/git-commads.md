@@ -5,6 +5,20 @@
 **Navigate to your desired directory**
 `cd /path/to/your/directory`
 
+| Command Type | Command                                 | Description                                   |
+|--------------|-----------------------------------------|-----------------------------------------------|
+| **Local**    | `git init`                             | Initialize a new local repository.           |
+|              | `git add <file>`                      | Stage changes for commit.                    |
+|              | `git commit -m "message"`             | Commit staged changes with a message.        |
+|              | `git status`                          | Check the status of the repository.          |
+|              | `git branch <branch-name>`            | Create a new branch.                          |
+|              | `git merge <branch-name>`              | Merge a branch into the current branch.      |
+| **Remote**   | `git remote add origin <repository-url>` | Add a remote repository.                     |
+|              | `git push origin <branch-name>`       | Push local changes to the remote repository.  |
+|              | `git pull origin <branch-name>`       | Pull changes from the remote repository.      |
+|              | `git fetch origin`                    | Fetch changes from the remote without merging.|
+|              | `git remote -v`                       | View remote repository URLs.                  |
+
 | Step                         | Command                                                        | Description                                         |
 |------------------------------|----------------------------------------------------------------|-----------------------------------------------------|
 | **Initialize a Repository**  | `git init project_name`                                       | Start a new project.                               |
@@ -23,18 +37,4 @@
 | **Push Changes**             | `git push -u origin master`                                  | Push your commits to the remote repository.        |
 
 
-
-| Command Type | Command                                 | Description                                   |
-|--------------|-----------------------------------------|-----------------------------------------------|
-| **Local**    | `git init`                             | Initialize a new local repository.           |
-|              | `git add <file>`                      | Stage changes for commit.                    |
-|              | `git commit -m "message"`             | Commit staged changes with a message.        |
-|              | `git status`                          | Check the status of the repository.          |
-|              | `git branch <branch-name>`            | Create a new branch.                          |
-|              | `git merge <branch-name>`              | Merge a branch into the current branch.      |
-| **Remote**   | `git remote add origin <repository-url>` | Add a remote repository.                     |
-|              | `git push origin <branch-name>`       | Push local changes to the remote repository.  |
-|              | `git pull origin <branch-name>`       | Pull changes from the remote repository.      |
-|              | `git fetch origin`                    | Fetch changes from the remote without merging.|
-|              | `git remote -v`                       | View remote repository URLs.                  |
 
